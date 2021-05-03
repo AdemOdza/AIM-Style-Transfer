@@ -1,0 +1,16 @@
+<html>
+<body>
+    <h3>AI Style Transfer</h3>
+<div>
+  <form action="/predict" method="POST">
+    <label for="contimg">Content Image</label>
+    <input type="url" id="contimg" name="contimg" placeholder="https://example.com" pattern="https://.*" required>
+    <br>
+    <label for="stylimg">Style Image</label>
+    <input type="url" id="stylimg" name="stylimg" placeholder="https://example.com" pattern="https://.*" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
