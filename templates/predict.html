@@ -1,6 +1,43 @@
 <!doctype html>
 <html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Mulish', sans-serif;
+            background-color: white;
+            color:#221E22;
+        }
+        body{
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* padding-left: 25%; */
+        }
+        h1{
+            padding: 16px 16px 4px 16px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
    <body>
-       <h1> {{ prediction }}</h1>
+       <div>
+            <h1>AI Style Transfer</h1>
+            <p>by Adem Odza and Neha Rode</p>
+            <br>
+            <h1> {{ prediction }}</h1>
+        </div>
    </body>
 </html>

@@ -1,16 +1,86 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Mulish', sans-serif;
+            background-color: white;
+            color:#221E22;
+        }
+        body{
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* padding-left: 25%; */
+        }
+        h1{
+            padding: 16px 16px 4px 16px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        p{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #FC5130;
+        }
+        form{
+            width: 50%;
+            margin: auto;
+            padding: 30px;
+        }
+        input[type=url]{
+            width: 100%;
+            padding: 10px;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 30px;
+            margin-bottom: 30px;
+        }
+        input[type=url]:focus{
+            outline: #31263E;
+            background: #DFD8E8;
+            color: #624B81;
+        }
+        input[type="submit"]{
+            outline: none;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 30px;
+            margin: 16px 0px;
+            background: #ECA72C;
+        }
+    </style>
+</head>
 <body>
-    <h3>AI Style Transfer</h3>
-<div>
-  <form action="/predict" method="POST">
-    <label for="contimg">Content Image</label>
-    <input type="url" id="contimg" name="contimg" placeholder="https://example.com" pattern="https://.*" required>
-    <br>
-    <label for="stylimg">Style Image</label>
-    <input type="url" id="stylimg" name="stylimg" placeholder="https://example.com" pattern="https://.*" required>
-    <br>
-    <input type="submit" value="Submit">
-  </form>
-</div>
+    <div>
+        <h1>AI Style Transfer</h1>
+        <p>by Adem Odza and Neha Rode</p>
+        <br>
+        <form action="/predict" method="POST">
+            <label for="contimg">Content Image</label>
+            <input type="url" id="contimg" name="contimg" placeholder="https://example.com" pattern="https://.*" required>
+            <br>
+            <label for="stylimg">Style Image</label>
+            <input type="url" id="stylimg" name="stylimg" placeholder="https://example.com" pattern="https://.*" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
